@@ -1,84 +1,69 @@
-# Security Guard Management System
+# Secure-Watch: Security Guard Management System 🛡️
 
-A responsive frontend web application for managing security guards, supervisors, and system notifications.
-The application is designed as a complete frontend-only system that simulates real-world management workflows using mock data and browser storage.
+> **Internship Evaluation Project** > This repository contains a frontend development task built specifically for an internship selection process. It was developed to demonstrate proficiency in modern UI/UX implementation, component structuring, routing, and complex client-side state management within a time-bound evaluation period.
 
-This project focuses on clean architecture, scalable structure, usability, and professional UI/UX design patterns, without any backend integration.
+## 📖 Project Overview
 
-# Project Overview
+**Secure-Watch** is a responsive, frontend-only web application designed to simulate real-world management workflows for security personnel. 
 
-The Security Guard Management System allows supervisors to:
+Because this was designed as a frontend-specific evaluation without a live backend, the application intelligently leverages browser storage (LocalStorage) and mock data to simulate complex data mutations, session handling, and dashboard analytics. The primary focus is on clean architecture, scalable folder structure, and professional design patterns.
 
-1. Register and log in securely
+## ✨ Differentiating Highlights
 
-2. View a centralized dashboard
+As an evaluation piece, this project specifically focuses on showcasing robust frontend skills:
 
-3. Manage security guards
+* **Simulated Full-Stack Workflows:** Complete implementation of CRUD operations (Create, Read, Update, Delete) entirely on the client side, proving an understanding of data flow before an API is even connected.
+* **Complex State Management:** Managing supervisor sessions and guard registries securely without external databases.
+* **Form Validation & Error Handling:** Comprehensive edge-case handling on registration and login screens to ensure robust user inputs.
+* **Component Reusability:** Modular UI design ensuring that tables, cards, and notification banners can be easily reused and scaled.
 
-4. Add and view guard details
+## 🚀 Key Features
 
-5. Monitor notifications and system updates
+### 1. Landing Interface
+* Engaging application introduction and feature overview.
+* Intuitive navigation guiding users to authentication flows.
 
-6. Navigate through a structured management interface
+### 2. Secure Authentication
+* **Supervisor Login & Registration:** Dedicated flows for management access.
+* **Robust Validation:** Real-time form validation for all input fields.
+* **Session Management:** Secure state simulation using LocalStorage to persist supervisor sessions across page reloads.
 
-The system is built to reflect real-world frontend application architecture and product-style user experience.
+### 3. Centralized Supervisor Dashboard
+* **Guard Management:** Interface to add new guards, view detailed profiles, and manage existing security personnel.
+* **System Monitoring:** A dedicated view for system notifications, alerts, and operational updates.
+* **Structured Navigation:** Clean, accessible routing through the management interface.
 
-# Features
+## 💻 Tech Stack & Architecture
 
-  ## Landing Page
+* **Frontend:** [Insert your framework, e.g., React.js / Next.js / Vanilla JS]
+* **Styling:** [Insert your styling tool, e.g., Tailwind CSS / CSS Modules]
+* **State/Storage:** Browser LocalStorage API
+* **Architecture Strategy:** Container-Presentational component pattern for clean separation of logic and UI.
 
-1. Application introduction
+## 🛠️ Getting Started
 
-2. Feature overview
+To run this evaluation project locally:
 
-3. Navigation to login and registration
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/bhumi1235/Secure-Watch.git](https://github.com/bhumi1235/Secure-Watch.git)
+   cd Secure-Watch
 
-  ## Authentication
+```
 
-1. Supervisor login
+2. Install dependencies:
+```bash
+npm install
 
-2. Supervisor registration
+```
 
-3. Form validation for all inputs
 
-4. Session simulation using LocalStorage
+3. Start the development server:
+```bash
+npm run dev
 
-  ## Supervisor Dashboard
+```
 
-1. Summary view of key system data
 
-2. Navigation to core features
 
-3. Central control interface
-
-  ## Guard Management
-
-1. List view of all guards
-
-2. Guard registration form
-
-3. Input validation
-
-4. Individual guard detail view
-
-5. Persistent data using LocalStorage
-
-  ## Notifications
-
-1. System alerts and updates
-
-2. Mock notification data
-
-3. Structured notification view
-
-  ## Technology Stack
-
-1. Frontend: React (Vite)
-
-2. Routing: React Router DOM
-
-3. Styling: Custom CSS (responsive design system)
-
-4. State Management: React Hooks (useState, useEffect)
-
-5. Data Storage: Browser LocalStorage (mock backend)
+```
